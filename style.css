@@ -1,0 +1,62 @@
+*,
+*::before,
+*::after {
+  /*border-box tells the browser to account for any border
+   and padding in the values you specify for an element's width and height.*/
+  box-sizing: border-box;
+}
+
+body {
+  margin: 20px 0;
+  background: gray;
+}
+
+.grid {
+  max-width: 960px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.card {
+    position: relative;
+    transition: all 0.4s linear;
+    transform-style: preserve-3d;
+    margin: 5px;
+
+  }
+  
+  .card,
+  .back,
+  .front {
+    height: 150px;
+    width: 150px;
+  }
+  
+  .back,
+  .front {
+    position: absolute;
+    backface-visibility: hidden;
+  }
+  .front {
+    background-image: url("/img/card.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+  
+  .back {
+    transform: rotateY(180deg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+
+  .selected {
+    transform: rotateY(180deg);
+  }
+  
+  .match .front {
+    background: gray;
+  }
