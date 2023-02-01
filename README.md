@@ -1,5 +1,6 @@
 ## Card Memory Game Demo
-Here we are creating a memory game using the simple concepts of **HTML**, **CSS**, and **JavaScript**. You can check the demo of the game here.
+
+Here we are creating a memory game using the simple concepts of **HTML**, **CSS**, and **JavaScript**. You can check the demo of the game [here](https://maidaijaz.github.io/).
 
 Here is a general outline of the steps you can follow to develop the logic for a memory game:
 
